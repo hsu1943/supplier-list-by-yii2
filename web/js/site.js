@@ -3,14 +3,14 @@ let all = false
 let grid = $('#grid')
 $('.site-customer').on('click', '.export-confirm', function () {
     let ids = grid.yiiGridView('getSelectedRows');
-    console.log(ids)
     // search params
     let params_str = window.location.search.substr(1);
-    console.log(params_str)
     doExport(ids, params_str)
 }).on('change', "input[name='selection_all']", function () {
     all = grid.find("input[name='selection_all']").is(':checked')
     let select_all_page = $('#select-all-page')
+    let ids = grid.yiiGridView('getSelectedRows');
+    $('#page_num').text(ids.length)
     let clear_selection = $('#clear-selection')
     consoleAll()
     if (all) {

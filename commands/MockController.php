@@ -25,7 +25,7 @@ class MockController extends Controller
         }
         try {
             $res = Yii::$app->db->createCommand()->batchInsert(Supplier::tableName(), ['name', 'code', 't_status'], $list)->execute();
-            echo '插入数据' . $res . '条' . PHP_EOL;
+            echo 'Insert' . $res . 'rows' . PHP_EOL;
         } catch (Exception $e) {
             echo $e->getMessage() . PHP_EOL;
         }

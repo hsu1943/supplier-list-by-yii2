@@ -130,8 +130,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                    <button type="button" class="btn btn-info export-confirm">确定</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success export-confirm">Submit</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal -->
