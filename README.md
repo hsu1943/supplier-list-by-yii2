@@ -2,7 +2,7 @@ Supplier List by Yii2 and Yii GridView widget
 
 1. Pull code
 ```shell
-git clone  yii2-demo
+git clone git@github.com:hsu1943/supplier-list-by-yii2.git yii2-demo
 ```
 
 2. Composer install
@@ -32,14 +32,22 @@ Edit your mysql connect information in file `/config/common.php`
 ...
 ```
 
-4. Mock data
+4. Create table and insert data
 
-Enter the project root directory and run command:
+Run migrate to add table `supplier` ：
+
+```shell
+php ./yii migrate
+```
+
+Then run command:
 
 ```shell
 php ./yii mock/supplier
 ```
 
-This command will insert 10 new rows into the table `supplier` one time.
+Run this command will insert 10 new rows into the table `supplier` each time.
 
-Assuming that this project have been binded with domain 'demo.test', then you can visit the supplier list page by url `http://demo.test/suppliers`.
+5. Add project to nginx/apache
+
+Assuming that this project have been binding with domain 'demo.test', then you can visit the supplier list page by url `http://demo.test/suppliers`.
