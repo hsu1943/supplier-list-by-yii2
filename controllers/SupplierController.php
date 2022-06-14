@@ -61,7 +61,9 @@ class SupplierController extends Controller
         $exportFile = Yii::getAlias('@runtime/' . $fileName);
         $fp = fopen ( $exportFile , 'w' );
         foreach ( $data as $fields ) {
-            fputcsv ( $fp , $fields );
+            fputcsv ( $fp , array_map(function ($field){
+                return "\xEF\xBB\xBF" . $field;
+            }, $fields) );
         }
         fclose( $fp );
         return $exportFile;
