@@ -1,4 +1,4 @@
-A supplier list demo by Yii2 and Yii GridView widget.
+A suppliers list demo by Yii2 and Yii GridView widget.
 
 1. Pull project
 ```shell
@@ -63,4 +63,4 @@ Run this command will insert 10 new rows into the table `supplier` each time.
 
 5. Add project to nginx/apache
 
-Assuming that this project have been binding with domain 'demo.test', then you can visit the supplier list page by url `http://demo.test/suppliers`.
+Assuming that this project have been binding with domain 'demo.test', then you can visit the suppliers list page by url `http://demo.test/suppliers`.
