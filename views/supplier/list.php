@@ -10,7 +10,7 @@ use app\models\SupplierSearch;
 use yii\grid\GridView;
 use yii\helpers\Html;
 
-$this->title                   = 'Suppliers List';
+$this->title                   = 'Suppliers List Test';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-customer">
